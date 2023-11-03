@@ -13,7 +13,7 @@ from flask_cors import CORS
 # nltk.download('wordnet')
 
 
-app = Flask(__name__, static_folder='wsd-app/build')
+app = Flask(__name__, static_folder='deploy/web')
 CORS(app)
 
 

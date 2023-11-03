@@ -50,7 +50,7 @@ wsd-senseval-lesk # Root folder of the project
 │
 ├── app.py # Flask application entry point
 │
-├── wsd-app # React application (frontend)
+├── web # React application (frontend)
 │ ├── build # Compiled and minified production build
 │ ├── public # Static files like HTML, icons, and manifest
 │ ├── src # Source files for the React app
@@ -136,7 +136,7 @@ To serve the production build files with Flask, ensure the Flask server is confi
 ```bash
 from flask import Flask, send_from_directory
 
-app = Flask(__name__, static_folder='../wsd-app/build')
+app = Flask(__name__, static_folder='../web/build')
 
 # ... existing Flask routes
 
