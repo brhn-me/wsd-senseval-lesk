@@ -1,6 +1,46 @@
-# Word Sense Disambiguation GUI
+# Project 25: WordSense Disambiguation 1
 
-This project is a React-based web application for Word Sense Disambiguation (WSD).
+## Introduction
+
+The WordSense Disambiguation (WSD) project is an advanced implementation aimed at determining the intended sense of words within a given context using Natural Language Processing (NLP) techniques. This project leverages Python's NLTK library, WordNet, and various supervised classification methods to accurately infer the meanings of words in sentences.
+
+Utilizing the senseval-2 dataset, which is rich in annotations and tagged with parts of speech and specific word senses, this project endeavors to create a robust WSD system. The dataset includes a diverse selection of texts from sources like the British National Corpus and the Wall Street Journal, providing a challenging and varied test bed for WSD algorithms.
+
+### Project Objectives:
+
+1. **Understanding and Testing the Base Program:** Comprehend and ensure the proper functioning of an existing WSD program that uses the Naive Bayes classifier for disambiguating word senses in the senseval-2 dataset.
+
+2. **Enhancing Performance Metrics:** Extend the base program to include additional performance metrics such as accuracy, F1 score, precision, and recall.
+
+3. **Classifier Comparison:** Implement and compare other classification algorithms like Random Forest, SVM, and Decision Trees, analyzing their performance in terms of F1 score, accuracy, precision, and recall.
+
+4. **Preprocessing Influence:** Study the effect of different preprocessing steps on the performance metrics and present the findings.
+
+5. **Feature Influence:** Test how different features (such as the number of features, tf-idf, and bi-grams) impact the performance of the classifiers.
+
+6. **Lesk Algorithm Implementation and Testing:** Utilize NLTK's Lesk algorithm for WSD and compare its results against the Naive Bayes classifier on both training and testing datasets.
+
+7. **Expanded Lesk Algorithm:** Design and implement an enhanced version of the Lesk algorithm that includes related terms extracted from WordNet, and compare its effectiveness with the standard Lesk algorithm.
+
+8. **Results Comparison and Analysis:** Compare results on a sample of the Senseval2 dataset to draw conclusions on the effectiveness of the various methods employed.
+
+9. **GUI Development:** Develop a simple graphical user interface (GUI) that enables users to input a target word and context for disambiguation, displaying results from both the simple and expanded Lesk algorithms.
+
+---
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Project Objectives](#project-objectives)
+- [Setup and Installation](#setup-and-installation)
+- [Running the Application](#running-the-application)
+- [Using the GUI](#using-the-gui)
+- [Building and Running with Docker](#running-with-docker)
+- [License](#license)
+- [Contributors](#contributors)
+- [Acknowledgments](#acknowledgments)
+
+---
 
 ## Project Folder Structure
 
