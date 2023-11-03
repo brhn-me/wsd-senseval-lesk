@@ -1,0 +1,17 @@
+.sentence-container p {
+    font-weight: bold;
+    font-size: 24px;
+    color: darkgrey;
+}
+
+.sentence-container .tokens span{
+    cursor: pointer;
+}
+
+.sentence-container .tokens span:hover{
+    background-color: yellow;
+}
+
+.sentence-container .tokens span.selected{
+    background-color: orange;
+}
