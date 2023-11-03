@@ -5,10 +5,10 @@
 # Define the environment name
 VENV_NAME="venv"
 
-# Check if Python 3.10.12 is installed
-if ! command -v python3.10.12 &> /dev/null
+# Check if Python 3.10 is installed
+if ! command -v python3.10 &> /dev/null
 then
-    echo "Python 3.10.12 could not be found, please install it first."
+    echo "Python 3.10 could not be found, please install it first."
     exit 1
 fi
 
@@ -30,11 +30,6 @@ fi
 
 echo "Virtual environment setup complete. Type 'source $VENV_NAME/bin/activate' to activate it."
 
-echo "Downloading nltk data..."
-
-# Activate virtual environment
-source $VENV_NAME/bin/activate
-
 # Function to download NLTK data
 download_nltk_data() {
     python -m nltk.downloader stopwords
@@ -42,6 +37,7 @@ download_nltk_data() {
     python -m nltk.downloader wordnet
 }
 
+# Call the function to download NLTK data
 download_nltk_data
 
 echo "NLTK data downloaded."
