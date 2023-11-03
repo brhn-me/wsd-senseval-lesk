@@ -30,11 +30,6 @@ fi
 
 echo "Virtual environment setup complete. Type 'source $VENV_NAME/bin/activate' to activate it."
 
-echo "Downloading nltk data..."
-
-# Activate virtual environment
-source $VENV_NAME/bin/activate
-
 # Function to download NLTK data
 download_nltk_data() {
     python -m nltk.downloader stopwords
@@ -42,6 +37,7 @@ download_nltk_data() {
     python -m nltk.downloader wordnet
 }
 
+# Call the function to download NLTK data
 download_nltk_data
 
 echo "NLTK data downloaded."

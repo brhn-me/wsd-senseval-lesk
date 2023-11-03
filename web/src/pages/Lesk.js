@@ -109,7 +109,7 @@ const Lesk = () => {
     const [relSig, setRelSig] = useState([]);
     const [hierarchicalData, setHierarchicalData] = useState(null);
 
-    const apiBase = process.env.REACT_APP_API_BASE_URL;
+    const apiBase = process.env.REACT_APP_API_BASE_URL || '/api';
 
     const handleSentenceChange = (event) => {
         setSentence(event.target.value);
