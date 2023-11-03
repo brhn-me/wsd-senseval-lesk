@@ -5,10 +5,10 @@
 # Define the environment name
 VENV_NAME="venv"
 
-# Check if Python 3.10 is installed
-if ! command -v python3.10 &> /dev/null
+# Check if Python 3.10.12 is installed
+if ! command -v python3.10.12 &> /dev/null
 then
-    echo "Python 3.10 could not be found, please install it first."
+    echo "Python 3.10.12 could not be found, please install it first."
     exit 1
 fi
 
