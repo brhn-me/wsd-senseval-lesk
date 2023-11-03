@@ -106,3 +106,17 @@ if __name__ == '__main__':
 
 After configuration, run your Flask app, and it will serve your React app at the root endpoint.
 
+## Running with Docker
+
+This section covers the setup and deployment of the Word Sense Disambiguation GUI using Docker.
+
+### Prerequisites
+
+- Docker installed on your machine. Installation guides for Docker can be found [here](https://docs.docker.com/get-docker/).
+
+### Building the Docker Image
+
+To build the Docker image for the application, navigate to the root directory of the project where the `Dockerfile` is located and run the following command:
+
+```bash
+docker build -t wsd-app-image .
