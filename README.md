@@ -1,6 +1,10 @@
 # Project 25: WordSense Disambiguation 1
 
+[![View Online Demo](https://img.shields.io/badge/View-Online%20Demo-blue?style=for-the-badge)](http://brhnme.pythonanywhere.com/)
+
 ![Screenshot of the application](screenshots/7.png "Demo of WordSense Disambiguation using extended Lesk")
+
+[![View Online Demo](https://img.shields.io/badge/View-Online%20Demo-blue?style=for-the-badge)](http://brhnme.pythonanywhere.com/)
 
 ---
 
@@ -362,3 +366,5 @@ chmod +x build_web.sh
 
 If you encounter any permissions issues, you may need to run the scripts with `sudo` on Unix-like systems or as an
 administrator on Windows.
+
+[![View Online Demo](https://img.shields.io/badge/View-Online%20Demo-blue?style=for-the-badge)](http://brhnme.pythonanywhere.com/)
