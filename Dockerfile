@@ -1,9 +1,9 @@
 # Stage 1: Building the React application
 FROM node:latest as build-stage
 WORKDIR /app
-COPY wsd-app/package*.json /app/
+COPY web/package*.json /app/
 RUN npm install
-COPY wsd-app/ /app/
+COPY web/ /app/
 RUN npm run build
 
 # Stage 2: Setting up the Flask application
@@ -15,7 +15,7 @@ COPY requirements.txt /code/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy built React app from the previous stage
-COPY --from=build-stage /app/build /code/wsd-app/build
+COPY --from=build-stage /app/build /code/web/build
 
 # Copy Flask application to Docker image
 COPY . /code/
@@ -33,7 +33,7 @@ CMD ["flask", "run"]
 
 
 # Build your Docker image
-# docker build -t wsd-app-image .
+# docker build -t web-image .
 
 # Run your Docker container
-# docker run -p 5000:5000 wsd-app-image
+# docker run -p 5000:5000 web-image
